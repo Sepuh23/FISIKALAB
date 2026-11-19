@@ -1,0 +1,6 @@
+{
+  "name": "PHYSILAB — Laboratorium Simulasi Fisika Interaktif",
+  "description": "Platform simulasi fisika interaktif berbahasa Indonesia mencakup Besaran dan Satuan, Kinematika, Dinamika, Energi, Termodinamika, Kalkulator Universal, Generator Grafik Dinamis, dan Unggah Rumus Kustom.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

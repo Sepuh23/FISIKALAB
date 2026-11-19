@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+:root {
+  --primary-bg: #CBE2DD;
+  --secondary-bg: #EFF5F4;
+  --primary-text: #1D3532;
+  --secondary-text: #4F6A66;
+  --accent-coral: #E26D62;
+  --seafoam: #8FB5AE;
+  --sage: #95B3A6;
+  --earth-brown: #8C685C;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    text-wrap: balance;
+  }
+
+  .font-mono-tabular {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom subtle range slider styling matching pastel mint & coral */
+input[type="range"].physilab-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: #CBE2DD;
+  outline: none;
+}
+
+input[type="range"].physilab-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #E26D62;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgba(29, 53, 50, 0.22);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"].physilab-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+}
+
+input[type="range"].physilab-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #E26D62;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgba(29, 53, 50, 0.22);
+  cursor: pointer;
+}
+
+/* KaTeX crisp alignment */
+.katex-display {
+  margin: 0.4em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
